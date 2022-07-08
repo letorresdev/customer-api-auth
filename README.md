@@ -18,7 +18,7 @@ Backend-Api - Inside the folder /app run:
 ```bash
 $ npm install
 
-$ npm run #
+$ npm run 
 $ npm run dev # In the case you want to make change and see the results
 ```
 
@@ -27,7 +27,29 @@ $ npm run dev # In the case you want to make change and see the results
 
 # Available endpoints - Backend
 
-To be avaible
+To be avaible to access to the routes /customer/ and /customer/:id ,you need a token. 
+1 - Create an account in the route /singup/ 
+```json
+{
+	"username": "sydneysummer.dev@gmail.com",
+	"password": "australia"
+}
+
+```
+2 - You will receive as answer:
+
+```json
+{
+	"username": "ssydney.dev@gmail.com",
+	"token": "eAppJXAFtWuzGLFaYnuRWwjFMU1y9XdttFIb7L2Akw54"
+}
+```
+
+3 - Copy the token in the headers as:
+  Authorization  Bearer eAppJXAFtWuzGLFaYnuRWwjFMU1y9XdttFIb7L2Akw54
+
+4 - Now you you will be avaible to add and retrieve customer from  /customer/ & /customer/:id 
+
 
 # Available endpoints - Backend
 
